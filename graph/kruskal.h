@@ -32,7 +32,7 @@ int partition(Edge edge[], int low, int high) {
 void QuickSort(Edge edge[], int low, int high) {
     if (low >= high)return;
     int pivot = partition(edge, low, high);
-    QuickSort(edge, 0, pivot - 1);
+    QuickSort(edge, low, pivot - 1);
     QuickSort(edge, pivot + 1, high);
 }
 
