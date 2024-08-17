@@ -4,6 +4,7 @@
 #include "tree/treeT.h"
 #include "graph/graphT.h"
 #include "sort/sortT.h"
+#include "search/searchT.h"
 
 
 void SqListInsertTest() {

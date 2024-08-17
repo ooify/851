@@ -32,4 +32,6 @@ add_executable(851 main.cpp
         graph/kruskal.h
         graph/dijkstra.h
         graph/floyd.h
-        graph/topologicalsort.h)
+        graph/topologicalsort.h
+        search/sqsearchtable.h
+        search/searchT.h)

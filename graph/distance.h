@@ -13,10 +13,12 @@ void BFSMinDistance(ALGraph G, int v) {
         DeQueue(Q, u);
         for (ArcNode *p = G.vertices[v].first; p; p = p->next) {
             int w = p->adjvex;
-            visited[w] = true;
-            path[w] = u;
-            d[w] = d[u] + 1;
-            EnQueue(Q, w);
+            if (!visited[w]) {
+                visited[w] = true;
+                path[w] = u;
+                d[w] = d[u] + 1;
+                EnQueue(Q, w);
+            }
         }
     }
 }
