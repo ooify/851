@@ -470,7 +470,22 @@ void SqTagQueueTest() {
 
 }
 
+void BinSearch_RecursionTest() {
+    SSTable T;
+    ElemType E[9];
+    for (int i = 0; i < 9; ++i) {
+        E[i].key = i + i;
+        printf("%d\t", i + i);
+    }
+    printf("\n");
+    T.p = E;
+    T.length = 9;
+//    int x = BinSearch_Recursion(T, 8, 0, T.length - 1);
+    int x = BinSearch(T, 0);
+    printf("%d\n", x);
+}
+
 int main() {
-    SqTagQueueTest();
+    BinSearch_RecursionTest();
     return 0;
 }

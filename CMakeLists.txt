@@ -34,4 +34,5 @@ add_executable(851 main.cpp
         graph/floyd.h
         graph/topologicalsort.h
         search/sqsearchtable.h
-        search/searchT.h)
+        search/searchT.h
+        search/binarysorttree.h)
