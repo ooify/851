@@ -3,8 +3,8 @@
 #include "queue/queueT.h"
 #include "tree/treeT.h"
 #include "graph/graphT.h"
-#include "sort/sortT.h"
 #include "search/searchT.h"
+#include "sort/sortT.h"
 
 
 void SqListInsertTest() {
@@ -485,7 +485,56 @@ void BinSearch_RecursionTest() {
     printf("%d\n", x);
 }
 
+void PrintSort(int A[]) {
+    for (int i = 0; i < 9; ++i) {
+        printf("%d\t", A[i]);
+    }
+    printf("\n");
+}
+
+void InsertSortTest() {
+    int A[] = {0, 4, 3, 2, 5, 1, 7, 8, 6};
+    PrintSort(A);
+    InsertSort(A, 9);
+    PrintSort(A);
+}
+
+void BinaryInsertTest() {
+    int A[] = {0, 4, 3, 2, 5, 1, 7, 8, 6};
+    PrintSort(A);
+    BinaryInsert(A, 9);
+    PrintSort(A);
+}
+
+void ShellSortTest() {
+    int A[] = {0, 4, 3, 2, 5, 1, 7, 8, 6};
+    PrintSort(A);
+    ShellSort(A, 9);
+    PrintSort(A);
+}
+
+void BubbleSortTest() {
+    int A[] = {0, 4, 3, 2, 5, 1, 7, 8, 6};
+    PrintSort(A);
+    BubbleSort(A, 9);
+    PrintSort(A);
+}
+
+void QuickSortTest() {
+    int A[] = {0, 4, 3, 2, 5, 1, 7, 8, 6};
+    PrintSort(A);
+    QuickSort(A, 0, 8);
+    PrintSort(A);
+}
+
+void SelectSortTest() {
+    int A[] = {0, 4, 3, 2, 5, 1, 7, 8, 6};
+    PrintSort(A);
+    SelectSort(A, 9);
+    PrintSort(A);
+}
+
 int main() {
-    BinSearch_RecursionTest();
+    SelectSortTest();
     return 0;
 }

@@ -1,20 +1,14 @@
-void swap(int &a, int &b) {
-    int temp = a;
-    a = b;
-    b = temp;
-}
-
 int partition(int A[], int low, int high) {
-    int key = A[low];
+    int pivot = A[low];
     while (low < high) {
-        while (low < high && A[high] >= key)high--;
-//        A[low] = A[high];
-        swap(A[low], A[high]);
-        while (low < high && A[low] <= key)low++;
-//        A[high] = A[low];
-        swap(A[low], A[high]);
+        while (low < high && A[high] >= pivot)high--;
+        A[low] = A[high];
+//        Swap(A[low], A[high]);
+        while (low < high && A[low] <= pivot)low++;
+        A[high] = A[low];
+//        Swap(A[low], A[high]);
     }
-//    A[low] = key;
+    A[low] = pivot;
     return low;
 }
 

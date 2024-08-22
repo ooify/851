@@ -35,4 +35,8 @@ add_executable(851 main.cpp
         graph/topologicalsort.h
         search/sqsearchtable.h
         search/searchT.h
-        search/binarysorttree.h)
+        search/binarysorttree.h
+        sort/binaryinsert.h
+        sort/shell.h
+        sort/bubble.h
+        sort/select.h)
