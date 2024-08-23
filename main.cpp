@@ -534,7 +534,22 @@ void SelectSortTest() {
     PrintSort(A);
 }
 
+void HeadSortTest() {
+    int A[] = {0, 4, 3, 2, 5, 1, 7, 8, 6};
+    PrintSort(A);
+    HeadSort(A, 9);
+    PrintSort(A);
+}
+
+void MergeSortTest() {
+    int A[] = {0, 4, 3, 2, 5, 1, 7, 8, 6};
+    PrintSort(A);
+    MergeSort(A, 0, 8);
+    PrintSort(A);
+
+}
+
 int main() {
-    SelectSortTest();
+    MergeSortTest();
     return 0;
 }

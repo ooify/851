@@ -39,4 +39,6 @@ add_executable(851 main.cpp
         sort/binaryinsert.h
         sort/shell.h
         sort/bubble.h
-        sort/select.h)
+        sort/select.h
+        sort/heap.h
+        sort/merge.h)
