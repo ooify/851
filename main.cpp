@@ -546,10 +546,36 @@ void MergeSortTest() {
     PrintSort(A);
     MergeSort(A, 0, 8);
     PrintSort(A);
+}
 
+void ReSortTest() {
+    int A[] = {1, -4, 3, 2, -5, 9, -7, 8, 6};
+    PrintSort(A);
+    ReSort(A, 9);
+    PrintSort(A);
+}
+
+void BiBubbleTest() {
+    int A[] = {1, -4, 3, 2, -5, 9, -7, 8, 6};
+    PrintSort(A);
+    BiBubble(A, 9);
+    PrintSort(A);
+}
+
+void LinkListInsertSortTest() {
+    LinkList L;
+    InitLinkList(L);
+    LinkListInsert(L, 1, 5);
+    LinkListInsert(L, 1, 2);
+    LinkListInsert(L, 1, 1);
+    LinkListInsert(L, 1, 4);
+    LinkListInsert(L, 1, 3);
+    PrintLinkList(L);
+    LinkListInsertSort(L);
+    PrintLinkList(L);
 }
 
 int main() {
-    MergeSortTest();
+    LinkListInsertSortTest();
     return 0;
 }

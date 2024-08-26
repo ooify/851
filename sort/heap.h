@@ -4,7 +4,7 @@ void HeapAdjust(int A[], int k, int n) {
         if (i < n && A[i] < A[i + 1])
             i++;
         if (A[0] >= A[i])
-            break;
+            break;             x
         else {
             A[k] = A[i];
             k = i;
