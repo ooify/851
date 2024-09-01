@@ -5,6 +5,7 @@
 #include "graph/graphT.h"
 #include "search/searchT.h"
 #include "sort/sortT.h"
+#include "algo/algoT.h"
 
 
 void SqListInsertTest() {
@@ -575,7 +576,17 @@ void LinkListInsertSortTest() {
     PrintLinkList(L);
 }
 
+void ChessBoardTest() {
+    ChessBoard(0, 0, 0, 1, 4);
+    for (int i = 0; i < 4; ++i) {
+        for (int j = 0; j < 4; ++j) {
+            printf("%d\t", board[i][j]);
+        }
+        printf("\n");
+    }
+}
+
 int main() {
-    LinkListInsertSortTest();
+    ChessBoardTest();
     return 0;
 }

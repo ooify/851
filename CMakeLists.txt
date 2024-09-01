@@ -41,4 +41,7 @@ add_executable(851 main.cpp
         sort/bubble.h
         sort/select.h
         sort/heap.h
-        sort/merge.h)
+        sort/merge.h
+        algo/divide_and_conquer/chessboard.h
+        algo/algoT.h
+        algo/dynamic_programming/matrixchain.h)

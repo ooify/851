@@ -61,3 +61,20 @@ void LinkListInsertSort(LinkList &L) {
         pre->next = t;
     }
 }
+
+//T13.使用带头节点的单链表实现简单选择排序
+void LinkListSelectSort(LinkList &L) {
+    LNode *p = L->next, *q, *min;
+    while (p) {
+        q = p->next;
+        min = p;
+        while (q) {
+            if (q->Elem < min->Elem)
+                min = q;
+            q = q->next;
+        }
+        if (min != p)
+            min->Elem = p->Elem;
+        p = p->next;
+    }
+}
