@@ -44,4 +44,7 @@ add_executable(851 main.cpp
         sort/merge.h
         algo/divide_and_conquer/chessboard.h
         algo/algoT.h
-        algo/dynamic_programming/matrixchain.h)
+        algo/dynamic_programming/matrixchain.h
+        algo/dynamic_programming/lis.h
+        algo/dynamic_programming/lcs.h
+        algo/dynamic_programming/maxsum.h)
