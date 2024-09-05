@@ -47,4 +47,5 @@ add_executable(851 main.cpp
         algo/dynamic_programming/matrixchain.h
         algo/dynamic_programming/lis.h
         algo/dynamic_programming/lcs.h
-        algo/dynamic_programming/maxsum.h)
+        algo/dynamic_programming/maxsum.h
+        algo/dynamic_programming/pack.h)

@@ -586,7 +586,14 @@ void ChessBoardTest() {
     }
 }
 
+void MatricChainTest() {
+    int p[] = {30, 35, 15, 5};
+    int m[MAX_SIZE][MAX_SIZE], s[MAX_SIZE][MAX_SIZE];
+    MatricChain(p, 5, m, s);
+    TraceBack(1, 5, s);
+}
+
 int main() {
-    ChessBoardTest();
+    MatricChainTest();
     return 0;
 }

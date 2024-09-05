@@ -8,6 +8,7 @@ int MaxSum(int a[], int n) {
             b = a[i];
         if (b > sum)
             sum = b;
+//        c=i  记录位置
     }
     return sum;
 }

@@ -2,3 +2,4 @@
 #include "dynamic_programming/matrixchain.h"
 #include "dynamic_programming/lcs.h"
 #include "dynamic_programming/lis.h"
+#include "dynamic_programming/pack.h"
