@@ -12,6 +12,7 @@ void Pack(int n, int c, int w[], int v[], int dp[][MAX_SIZE]) {
         }
     }
 }
+ 
 
 void TraceBack(int n, int c, int w[], int dp[][MAX_SIZE], int x[]) {
     for (int i = n; i > 0; --i) {

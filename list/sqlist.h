@@ -1,6 +1,3 @@
-#include <cstdio>
-#include <cstdlib>
-
 #define INIT_SIZE 5
 
 typedef struct {

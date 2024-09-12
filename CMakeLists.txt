@@ -48,4 +48,12 @@ add_executable(851 main.cpp
         algo/dynamic_programming/lis.h
         algo/dynamic_programming/lcs.h
         algo/dynamic_programming/maxsum.h
-        algo/dynamic_programming/pack.h)
+        algo/dynamic_programming/pack.h
+        algo/chapter_greedy/activity.h
+        paper/2016/1.h
+        paper/T.h
+        paper/2016/5.h
+        paper/2016/8.h
+        paper/2018/5.h
+        paper/2018/6.h
+)

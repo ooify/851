@@ -6,6 +6,7 @@
 #include "search/searchT.h"
 #include "sort/sortT.h"
 #include "algo/algoT.h"
+#include "paper/T.h"
 
 
 void SqListInsertTest() {
@@ -593,7 +594,16 @@ void MatricChainTest() {
     TraceBack(1, 5, s);
 }
 
+void vr6174Test() {
+    vr6174(7892);
+}
+
+void CoinSumTest() {
+    int coin[] = {500, 100, 50, 10, 5, 1};
+    printf("%d", CoinSum(coin, 6, 5241));
+}
+
 int main() {
-    MatricChainTest();
+    CoinSumTest();
     return 0;
 }
