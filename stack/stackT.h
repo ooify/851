@@ -75,23 +75,23 @@ bool DeStackQueue(SqStack &in, SqStack &out, int &e) {
 }
 
 //5.I代表入栈，O代表出栈，开始栈为空，最后栈为空，判断操作序列是否合法
-bool JudgeSq(char str[]) {
-    char *p = str;
-    if (*p == 'o')
-        return false;
-    int i = 0, o = 0;
-    while (*p) {
-        if (*p == 'i')
-            i++;
-        else
-            o++;
-        p++;
-    }
-    if (*(--p) == 'i')
-        return false;
-    printf("%d\t%d\n", i, o);
-    return i == o;
-}
+//bool JudgeSq(char str[]) {
+//    char *p = str;
+//    if (*p == 'o')
+//        return false;
+//    int i = 0, o = 0;
+//    while (*p) {
+//        if (*p == 'i')
+//            i++;
+//        else
+//            o++;
+//        p++;
+//    }
+//    if (*(--p) == 'i')
+//        return false;
+//    printf("%d\t%d\n", i, o);
+//    return i == o;
+//}
 
 //6.带头节点的循环单链表表示队列 只有一个指向尾节点的指针
 bool EnLinkListQueue(LNode *&rear, int e) {

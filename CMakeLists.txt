@@ -56,4 +56,7 @@ add_executable(851 main.cpp
         paper/2016/8.h
         paper/2018/5.h
         paper/2018/6.h
+        paper/2019/1.h
+        paper/2019/3.h
+        paper/2019/2.h
 )

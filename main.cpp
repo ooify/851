@@ -603,7 +603,37 @@ void CoinSumTest() {
     printf("%d", CoinSum(coin, 6, 5241));
 }
 
+void ReverseStrTest() {
+    char str[] = "HOw olD are You";
+    Reverse(str);
+    printf("%s", str);
+}
+
+void WordSortTest() {
+    char str[] = "Ad xvzx bdskj jklds";
+    char *m[10];
+    int n;
+    split(str, m, n);
+    for (int i = 0; i < n; ++i) {
+        printf("%s\n", m[i]);
+    }
+    printf("\n");
+    sort(m, n);
+    for (int i = 0; i < n; ++i) {
+        printf("%s\n", m[i]);
+    }
+}
+
+void SqSortTest() {
+    int A[] = {1, 2, 3, 4, 5, 6, 7, 8};
+    SqSort(A, 8, 3, 3);
+    for (int i : A) {
+        printf("%d\t", i);
+    }
+}
+
 int main() {
-    CoinSumTest();
+
+    SqSortTest();
     return 0;
 }
