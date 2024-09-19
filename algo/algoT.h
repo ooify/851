@@ -4,3 +4,4 @@
 #include "dynamic_programming/lis.h"
 #include "dynamic_programming/pack.h"
 #include "chapter_greedy/activity.h"
+#include "chapter_greedy/removenum.h"

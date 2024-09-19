@@ -1,4 +1,3 @@
-
 #include "linklist.h"
 #include "sqlist.h"
 

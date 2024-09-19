@@ -1,6 +1,3 @@
-#include <cstdlib>
-#include <cstdio>
-
 typedef struct LNode {
     int Elem;
     struct LNode *next;

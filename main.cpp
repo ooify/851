@@ -1,3 +1,6 @@
+#include <cstring>
+#include <cstdlib>
+#include <cstdio>
 #include "list/listT.h"
 #include "stack/stackT.h"
 #include "queue/queueT.h"
@@ -426,8 +429,15 @@ void StackQueueTest() {
 }
 
 void JudgeSqTest() {
-    char str[] = {'i', 'i', 'o', 'i', 'o', 'o', '\0'};
-    printf("%d", JudgeSq(str));
+//    char str[] = {'i', 'i', 'o', 'i', 'o', 'o', '\0'};
+    char str1[] = "ioiioioo";
+    char str2[] = "iooioiio";
+    char str3[] = "iiioioio";
+    char str4[] = "iiiooioo";
+    printf("%d\n", JudgeSq(str1));
+    printf("%d\n", JudgeSq(str2));
+    printf("%d\n", JudgeSq(str3));
+    printf("%d\n", JudgeSq(str4));
 }
 
 void CheakBracTest() {
@@ -627,13 +637,13 @@ void WordSortTest() {
 void SqSortTest() {
     int A[] = {1, 2, 3, 4, 5, 6, 7, 8};
     SqSort(A, 8, 3, 3);
-    for (int i : A) {
+    for (int i: A) {
         printf("%d\t", i);
     }
 }
 
 int main() {
-
-    SqSortTest();
+    char str[] = "1432219";
+    printf("%s", RemoveNum(str, 3));
     return 0;
 }

@@ -92,6 +92,21 @@ bool DeStackQueue(SqStack &in, SqStack &out, int &e) {
 //    printf("%d\t%d\n", i, o);
 //    return i == o;
 //}
+bool JudgeSq(char str[]) {
+    SqStack S;
+    InitSqStack(S);
+    char *p = str;
+     while (*p) {
+        if (*p == 'i') {
+            Push(S, *p);
+        } else {
+            int t;
+            if (!Pop(S, t))return false;
+        }
+        p++;
+    }
+    return SqStackEmpty(S);
+}
 
 //6.带头节点的循环单链表表示队列 只有一个指向尾节点的指针
 bool EnLinkListQueue(LNode *&rear, int e) {
