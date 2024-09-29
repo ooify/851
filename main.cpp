@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <cstring>
 #include <cstdlib>
 #include <cstdio>
@@ -643,7 +644,7 @@ void SqSortTest() {
 }
 
 int main() {
-    char str[] = "1432219";
-    printf("%s", RemoveNum(str, 3));
+    char str[] = "1432.719 124.124.513";
+    printf("%f", atof(str));
     return 0;
 }

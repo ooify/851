@@ -1,3 +1,5 @@
+#include <climits>
+
 void Prim(MGraph G, int v, int &sum) {
     bool isJoin[MAX_VERTEX];
     int u, min, lowcost[MAX_VERTEX];
