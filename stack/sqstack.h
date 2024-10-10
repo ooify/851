@@ -9,9 +9,7 @@ void InitSqStack(SqStack &S) {
 }
 
 bool SqStackEmpty(SqStack S) {
-    if (S.top == -1)
-        return true;
-    return false;
+    return S.top == -1;
 }
 
 bool GetTop(SqStack S, int &e) {
