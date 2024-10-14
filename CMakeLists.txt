@@ -61,4 +61,7 @@ add_executable(851 main.cpp
         paper/2019/2.h
         algo/chapter_greedy/removenum.h
         algo/divide_and_conquer/select.h
+        algo/backtracking/load.h
+        algo/backtracking/triangle.h
+        tools.h
 )

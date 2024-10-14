@@ -1,7 +1,6 @@
-#include <algorithm>
-#include <cstring>
 #include <cstdlib>
 #include <cstdio>
+#include "tools.h"
 #include "list/listT.h"
 #include "stack/stackT.h"
 #include "queue/queueT.h"
