@@ -22,5 +22,4 @@ void TraceBack(int i, int j, int s[][MAX_SIZE]) {
     TraceBack(i, s[i][j], s);
     TraceBack(s[i][j] + 1, j, s);
     printf("A%d,%d and A%d,%d\n", i, s[i][j], s[i][j] + 1, j);
-//    printf("%d")
 }

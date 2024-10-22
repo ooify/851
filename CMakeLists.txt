@@ -64,4 +64,6 @@ add_executable(851 main.cpp
         algo/backtracking/load.h
         algo/backtracking/triangle.h
         tools.h
+        algo/chapter_greedy/pack.h
+        algo/chapter_greedy/load.h
 )

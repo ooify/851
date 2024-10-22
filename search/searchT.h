@@ -4,7 +4,7 @@
 typedef struct BSTNode {
     int count;
     int data;
-    struct BSTNode *lchile, *rchild;
+    struct BSTNode *lchild, *rchild;
 } BSTNode, *BSTTree;
 
 //1.判断一颗二叉树是否为二叉排序树
@@ -24,11 +24,11 @@ bool IsBST(BiTree T) {
 void InsertBSTNode(BSTTree &T, int e) {
     BSTNode *pre = NULL;
     BSTNode *p = T;
-    while (!p) {
+    while (p) {
         if (p->data != e) {
             pre = p;
             if (e < p->data) {
-                p = p->lchile;
+                p = p->lchild;
             } else {
                 p = p->rchild;
             }
@@ -39,11 +39,11 @@ void InsertBSTNode(BSTTree &T, int e) {
     BSTNode *s = (BSTNode *) malloc(sizeof(BSTNode));
     s->data = e;
     s->count = 1;
-    s->lchile = s->rchild = NULL;
+    s->lchild = s->rchild = NULL;
     if (!pre)
         T = s;
     if (p->data > e)
-        pre->lchile = s;
+        pre->lchild = s;
     else
         pre->rchild = s;
 }

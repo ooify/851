@@ -20,7 +20,6 @@ char *RemoveNum(char *num, int n) {
             }
         }
         *s = '\0';
-
     }
     return num;
 }

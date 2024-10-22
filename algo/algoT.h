@@ -6,5 +6,7 @@
 #include "dynamic_programming/pack.h"
 #include "chapter_greedy/activity.h"
 #include "chapter_greedy/removenum.h"
+#include "chapter_greedy/pack.h"
+#include "chapter_greedy/load.h"
 #include "backtracking/load.h"
 #include "backtracking/triangle.h"
