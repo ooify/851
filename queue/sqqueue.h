@@ -1,4 +1,4 @@
-#define MAX_SIZE 5
+// #define MAX_SIZE 5
 typedef struct {
     int data[MAX_SIZE];
     int front, rear;

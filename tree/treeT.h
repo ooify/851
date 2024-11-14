@@ -36,6 +36,10 @@ bool DeTreeQueue(SqTreeQueue &Q, BiTNode *&e) {
     return true;
 }
 
+bool IsEmpty(SqTreeQueue Q)
+{
+    return  Q.front == Q.rear;
+}
 void LevelOrder(BiTree T) {
     SqTreeQueue Q;
     InitSqTreeQueue(Q);
@@ -252,4 +256,29 @@ void DoubleTraverse(BiTree T) {
     DoubleTraverse(T->lchild);
     printf("%d", T->data);
     DoubleTraverse(T->rchild);
+}
+
+// 计算二叉树宽度（每层节点的最大值）
+int WidthOfBiTree(BiTree T) {
+    if (T == NULL)
+        return 0;
+
+    int maxWidth = 0;
+    SqTreeQueue Q;
+    EnTreeQueue(Q, T);  // 将根节点入队
+    while (!IsEmpty(Q)) {
+        int len = (Q.rear - Q.front+MAX_SIZE)%MAX_SIZE;
+        if (maxWidth< len) {
+            maxWidth = len;
+        }
+        for (int i = 0; i < len; i++) {
+            BiTNode *t;
+            DeTreeQueue(Q,t);  // 弹出当前节点
+            if (t->lchild)
+                EnTreeQueue(Q, t->lchild);  // 左子节点入队
+            if (t->rchild)
+                EnTreeQueue(Q, t->rchild);  // 右子节点入队
+        }
+    }
+    return maxWidth;
 }

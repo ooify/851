@@ -643,7 +643,11 @@ void SqSortTest() {
 }
 
 int main() {
-    char str[] = "1432.719 124.124.513";
-    printf("%f", atof(str));
+    // char str[] = "1432.719 124.124.513";
+    // printf("%f", atof(str));
+    for (int i = 0; i < INT16_MAX; ++i)
+    {
+        printf("%d\n",i);
+    }
     return 0;
 }

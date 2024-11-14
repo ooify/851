@@ -66,4 +66,5 @@ add_executable(851 main.cpp
         tools.h
         algo/chapter_greedy/pack.h
         algo/chapter_greedy/load.h
+        tree/huffmantree.h
 )

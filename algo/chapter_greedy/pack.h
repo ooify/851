@@ -1,8 +1,8 @@
-void sort(int i, int* p);
+void sort(int i, int* v, int* p);
 
-void pack(int n, int M, int w[], int x[])
+void pack(int n, int M, int v[], int w[], int x[])
 {
-    sort(n, w);
+    sort(n, v, w);
     int i;
     for (i = 1; i <= n; ++i)
         x[i] = 0;
