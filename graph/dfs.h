@@ -13,7 +13,7 @@ void MDFS(MGraph G, int i) {
     visit(i);
     visited[i] = true;
     for (int w = 0; w < G.vexnum; w++) {
-        if (!visited[i] && G.Edge[i][w] == 1) {
+        if (!visited[w] && G.Edge[i][w] == 1) {
             MDFS(G, i);
         }
     }

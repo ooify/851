@@ -1,6 +1,6 @@
 void InsertSort(int A[], int n) {
     int i, j;
-    for (i = 2; i < n; ++i) {
+    for (i = 2; i <= n; ++i) {
         if (A[i] < A[i - 1]) {
             A[0] = A[i];
             for (j = i - 1; A[j] > A[0]; --j)

@@ -1,3 +1,4 @@
+// 最长公共子序列
 void LCSLength(int m, int n, char x[], char y[], int c[][MAX_SIZE], int b[][MAX_SIZE]) {
     for (int i = 1; i <= m; ++i)
         c[i][0] = 0;

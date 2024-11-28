@@ -1,12 +1,12 @@
-void sort(int i, int* v, int* p);
+void sort(int i, float* v, float* p);
 
-void pack(int n, int M, int v[], int w[], int x[])
+void pack(int n, float M, float v[], float w[], float x[])
 {
     sort(n, v, w);
     int i;
     for (i = 1; i <= n; ++i)
         x[i] = 0;
-    int c = M;
+    float c = M;
     for (i = 1; i <= n; ++i)
     {
         if (w[i] > c)
